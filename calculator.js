@@ -1,6 +1,15 @@
-const prompt = require("prompt-sync")(); // Please don't touch me :)
+var x = 7
+var y = 2
+const operation = "/";
 
-// The prompt method allows us to take an input from the user.
-// Run the code to see how to use prompt.
-const name = prompt("What's your name? ");
-console.log(`Hi, I'm ${name}.`);
+if (operation === "+"){
+    console.log(x + y);
+} else if (operation === "-") { 
+    console.log(x - y);
+} else if (operation === "/") {
+    console.log( x / y);
+} else if (operation === "*"){
+    console.log(x * y);
+} else {
+    console.log("enter one of these operations (+, -, /, *)");
+} 
